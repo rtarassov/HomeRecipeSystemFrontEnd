@@ -1,0 +1,37 @@
+<head>
+  <title>Ingredient page</title>
+  <script src="https://kit.fontawesome.com/56e753ee12.js" crossorigin="anonymous"></script>
+  <!--  TODO: -->
+  <!-- These fontawesome icons dont work, no idea why. Will deal with it some time in the future -->
+</head>
+<div class="tabs is-centered is-medium">
+  <ul>
+    <!--    TODO:-->
+    <!--    Make the active tab highlighted.-->
+    <!--    If i put class="is-active" in the first <li>, it only highlights Create.-->
+    <li>
+      <a routerLink="/create-recipe">
+        <span class="icon is-small"><i class="fa-solid fa-circle-plus"></i></span>
+        <span>Create</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/read-recipe">
+        <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+        <span>Read</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/update-recipe">
+        <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+        <span>Update</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/delete-recipe">
+        <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+        <span>Delete</span>
+      </a>
+    </li>
+  </ul>
+</div>

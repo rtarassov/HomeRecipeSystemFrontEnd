@@ -1,35 +1,31 @@
-<nav class="breadcrumb is-large is-centered" aria-label="breadcrumbs">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Recipes</a></li>
-    <li><a routerLink="/ingredients">Ingredients</a></li>
+<!--<nav class="breadcrumb is-large is-centered" aria-label="breadcrumbs">-->
+<!--  <ul>-->
+<!--    <li><a href="#">Home</a></li>-->
+<!--    <li><a href="#">Recipes</a></li>-->
+<!--    <li><a routerLink="/ingredients">Ingredients</a></li>-->
 
 
-    <li>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
-    </li>
+<!--&lt;!&ndash;    <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>&ndash;&gt;-->
+<!--  </ul>-->
+<!--</nav>-->
 
 
-<!--    <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>-->
-  </ul>
-</nav>
+
+
+<div class="navbar is-dark">
+<!--  always visible, which usually contains the logo and optionally some links or icons-->
+  <div class="navbar-brand">
+<!--    **LOGO WILL GO HERE**-->
+<!--    <a class="navbar-item">-->
+<!--      <img src="../../../../assets/img/logo-nav.png" >-->
+<!--    </a>-->
+  </div>
+
+
+    <div class="navbar-start navbar-end breadcrumb is-large" aria-label="breadcrumbs">
+      <a class="navbar-item" routerLink="/">Home</a>
+      <a class="navbar-item" routerLink="/recipes">Recipes</a>
+      <a class="navbar-item" routerLink="/ingredients">Ingredients</a>
+    </div>
+  </div>
+
