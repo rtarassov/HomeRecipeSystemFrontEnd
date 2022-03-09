@@ -18,6 +18,7 @@ import { RecipeCreateComponent } from './components/recipe-page/recipe-create/re
 import { RecipeReadComponent } from './components/recipe-page/recipe-read/recipe-read.component';
 import { RecipeUpdateComponent } from './components/recipe-page/recipe-update/recipe-update.component';
 import { RecipeDeleteComponent } from './components/recipe-page/recipe-delete/recipe-delete.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RecipeDeleteComponent } from './components/recipe-page/recipe-delete/re
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

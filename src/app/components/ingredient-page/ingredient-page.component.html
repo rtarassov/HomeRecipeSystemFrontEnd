@@ -1,2 +1,30 @@
-<app-ingredient-page-crud-menu></app-ingredient-page-crud-menu>
+<app-recipe-page-crud-menu></app-recipe-page-crud-menu> <br>
 <p>Ingredient main page</p>
+
+<div class="container is-cen">
+  <table class="table is-bordered is-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Quantity</th>
+      <th>Unit ID</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ingredient of ingredients">
+      <td><span>{{ingredient.id}}</span></td>
+      <td><span>{{ingredient.name}}</span></td>
+<!--      TODO: -->
+<!--      This part doesnt display for somereason.-->
+      <td><span>{{ingredient.type}}</span></td>
+      <td><span>{{ingredient.quantity}}</span></td>
+      <td><span>{{ingredient.unit.id}}</span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

@@ -1,2 +1,25 @@
-<app-recipe-page-crud-menu></app-recipe-page-crud-menu>
+<app-recipe-page-crud-menu></app-recipe-page-crud-menu> <br>
 <p>Recipe main page</p>
+
+<div class="container is-cen">
+  <table class="table is-bordered is-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Note</th>
+      <th>Preparing Method ID</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let recipe of recipes">
+      <td><span>{{recipe.id}}</span></td>
+      <td><span>{{recipe.name}}</span></td>
+      <td><span>{{recipe.note}}</span></td>
+      <td><span>{{recipe.prepMethod.id}}</span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
