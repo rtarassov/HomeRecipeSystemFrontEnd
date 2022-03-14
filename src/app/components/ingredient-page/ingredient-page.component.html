@@ -9,7 +9,6 @@
       <th>Name</th>
       <th>Type</th>
       <th>Quantity</th>
-      <th>Unit ID</th>
     </tr>
     </thead>
     <tbody>
@@ -17,8 +16,7 @@
       <td><span>{{ingredient.id}}</span></td>
       <td><span>{{ingredient.name}}</span></td>
       <td><span>{{ingredient.ingredientType}}</span></td>
-      <td><span>{{ingredient.quantity}}</span></td>
-      <td><span>{{ingredient.unit.id}}</span></td>
+      <td><span>{{ingredient.quantity}}{{ingredient.unit.name}}</span></td>
     </tr>
     </tbody>
   </table>
