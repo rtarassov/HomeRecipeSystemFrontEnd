@@ -1,25 +1,22 @@
 <app-recipe-page-crud-menu></app-recipe-page-crud-menu> <br>
 <p>Recipe main page</p>
 
-<div class="container is-cen">
-  <table class="table is-bordered is-striped">
-    <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Note</th>
-      <th>Preparing Method ID</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let recipe of recipes">
-      <td><span>{{recipe.id}}</span></td>
-      <td><span>{{recipe.name}}</span></td>
-      <td><span>{{recipe.note}}</span></td>
-      <td><span>{{recipe.prepMethod.id}}</span></td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+<section class="section">
+  <div class="container">
 
+    <div class="columns is-multiline">
+      <div class="column is-3" *ngFor="let recipe of recipes">
+        <div class="card-image">
+          <a class="card-header-title" routerLink="/recipe-single/{{recipe.id}}">
+            {{recipe.id}}. {{recipe.name}}
 
+          </a>
+          <div class="card-content">
+            <img src="assets/img/recipe-thumbnails/keedukartul.jpg" alt="Picture of the recipe">
+            {{recipe.note}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

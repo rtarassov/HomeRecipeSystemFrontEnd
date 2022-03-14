@@ -1,0 +1,13 @@
+<app-recipe-page-crud-menu></app-recipe-page-crud-menu> <br>
+
+<section>
+  <div class="container">
+    <div *ngIf="recipe">
+      <h1>{{recipe.name}}</h1>
+      <h2>{{recipe.note}}</h2>
+      <body class="card-content">
+      {{recipe.recipeIngredients}}
+      </body>
+    </div>
+  </div>
+</section>

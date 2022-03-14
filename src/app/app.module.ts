@@ -19,6 +19,7 @@ import { RecipeReadComponent } from './components/recipe-page/recipe-read/recipe
 import { RecipeUpdateComponent } from './components/recipe-page/recipe-update/recipe-update.component';
 import { RecipeDeleteComponent } from './components/recipe-page/recipe-delete/recipe-delete.component';
 import { HttpClientModule } from "@angular/common/http";
+import { RecipeSingleComponent } from './components/recipe-single/recipe-single.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from "@angular/common/http";
     RecipeCreateComponent,
     RecipeReadComponent,
     RecipeUpdateComponent,
-    RecipeDeleteComponent
+    RecipeDeleteComponent,
+    RecipeSingleComponent
   ],
   imports: [
     BrowserModule,

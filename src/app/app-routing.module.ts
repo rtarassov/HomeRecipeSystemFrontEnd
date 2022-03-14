@@ -11,6 +11,7 @@ import {RecipeCreateComponent} from "./components/recipe-page/recipe-create/reci
 import {RecipeReadComponent} from "./components/recipe-page/recipe-read/recipe-read.component";
 import {RecipeUpdateComponent} from "./components/recipe-page/recipe-update/recipe-update.component";
 import {RecipeDeleteComponent} from "./components/recipe-page/recipe-delete/recipe-delete.component";
+import {RecipeSingleComponent} from "./components/recipe-single/recipe-single.component";
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'delete-recipe',
     component: RecipeDeleteComponent
+  },
+  {
+    path: 'recipe-single/:id',
+    component: RecipeSingleComponent
   }
 ];
 
