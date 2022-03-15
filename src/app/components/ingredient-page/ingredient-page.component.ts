@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-ingredient-page',
@@ -9,9 +11,14 @@ import { HttpClient } from "@angular/common/http";
 export class IngredientPageComponent implements OnInit {
 
   public ingredients: any[] | undefined;
+  // icons
+  faPencil = faPencil;
+  faTrash = faTrash;
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
+    console.log("Getting ingredients from server")
     this.getIngredients();
   }
 

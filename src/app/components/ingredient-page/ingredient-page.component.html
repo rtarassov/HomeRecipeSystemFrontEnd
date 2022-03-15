@@ -1,6 +1,6 @@
 <app-recipe-page-crud-menu></app-recipe-page-crud-menu> <br>
 <p>Ingredient main page</p>
-
+<body>
 <div class="container is-cen">
   <table class="table is-bordered is-striped">
     <thead>
@@ -9,6 +9,7 @@
       <th>Name</th>
       <th>Type</th>
       <th>Quantity</th>
+      <th>Edit</th>
     </tr>
     </thead>
     <tbody>
@@ -17,10 +18,20 @@
       <td><span>{{ingredient.name}}</span></td>
       <td><span>{{ingredient.ingredientType}}</span></td>
       <td><span>{{ingredient.quantity}}{{ingredient.unit.name}}</span></td>
+      <td>
+        <button class="button" name="pencil-outline">
+          <fa-icon [icon]="faPencil"></fa-icon>
+        </button>
+        <button class="button" name="pencil-outline">
+          <fa-icon [icon]="faTrash"></fa-icon>
+        </button>
+      </td>
     </tr>
     </tbody>
   </table>
 </div>
+</body>
+
 
 
 

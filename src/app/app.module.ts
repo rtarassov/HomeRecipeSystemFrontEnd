@@ -20,6 +20,7 @@ import { RecipeUpdateComponent } from './components/recipe-page/recipe-update/re
 import { RecipeDeleteComponent } from './components/recipe-page/recipe-delete/recipe-delete.component';
 import { HttpClientModule } from "@angular/common/http";
 import { RecipeSingleComponent } from './components/recipe-single/recipe-single.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { RecipeSingleComponent } from './components/recipe-single/recipe-single.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
