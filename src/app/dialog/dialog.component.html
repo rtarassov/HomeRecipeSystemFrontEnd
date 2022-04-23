@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>Add New Ingredient</h1>
+<div mat-dialog-content>
+  <form [formGroup]="ingredientForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="e.g Potato"> <!--formControlName="name" need to be the same as dialog.component.ts-->
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Type</mat-label>
+      <!--How to ask type from back-end so if we change something, we don't need to do it in both places -->
+      <mat-select formControlName="ingredientType">
+        <mat-option value="Vegetable">Vegetable</mat-option>
+        <mat-option value="Spice">Spice</mat-option>
+        <mat-option value="Oil">Oil</mat-option>
+        <mat-option value="Herb">Herb</mat-option>
+        <mat-option value="Flour">Flour</mat-option>
+        <mat-option value="Grains">Grains</mat-option>
+        <mat-option value="Fruit">Fruit</mat-option>
+        <mat-option value="Berries">Berries</mat-option>
+        <mat-option value="Dairy">Dairy</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Quantity</mat-label>
+      <input formControlName="quantity" matInput type="number" placeholder="e.g. 400g, 1kg, 2l">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Unit</mat-label>
+      <mat-select formControlName="unit">
+        <mat-option value="kg">Kg</mat-option>
+        <mat-option value="g">g</mat-option>
+        <mat-option value="L">l</mat-option>
+        <mat-option value="ml">ml</mat-option>
+        <mat-option value="piece">piece</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Best before</mat-label>
+      <input formControlName="bestBefore" matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <label ><h2>Freshness</h2></label>
+    <mat-radio-group formControlName="freshness" class="example-radio-group">
+      <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh">
+        {{fresh}}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Comment</mat-label>
+      <textarea formControlName="comment" matInput placeholder="Optional. Ex: Best with chicken"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button> <!--mat-dialog-close will close the dialog-->
+  <button mat-raised-button color="primary" (click)="addIngredient()">{{actionBtn}}</button> <!--(click)="addIngredient() will call a method from dialog.comp.ts-->
+
+</div>
+
+

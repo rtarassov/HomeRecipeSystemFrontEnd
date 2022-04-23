@@ -1,0 +1,74 @@
+{
+  "ingredientList": [
+    {
+      "name": "Potato",
+      "ingredientType": "Vegetable",
+      "quantity": 5,
+      "unit": "kg",
+      "freshness": "No rush",
+      "comment": "If you have potatoes, you'll always have something to eat! :)",
+      "bestBefore": "2022-06-29T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "Carrot",
+      "ingredientType": "Vegetable",
+      "quantity": 1,
+      "unit": "kg",
+      "freshness": "No rush",
+      "comment": "Good for your eyes ;) ",
+      "bestBefore": "2022-06-28T21:00:00.000Z",
+      "id": 2
+    },
+    {
+      "name": "Apple",
+      "ingredientType": "Fruit",
+      "quantity": 500,
+      "unit": "g",
+      "freshness": "No rush",
+      "comment": "An apple a day keeps doctor away!",
+      "bestBefore": "2022-04-20T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "name": "Olive oil",
+      "ingredientType": "Oil",
+      "quantity": 500,
+      "unit": "ml",
+      "freshness": "No rush",
+      "comment": "Good for your health :P",
+      "bestBefore": "2022-07-29T21:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "Milk",
+      "ingredientType": "Dairy",
+      "quantity": 2,
+      "unit": "L",
+      "freshness": "Few days to go",
+      "comment": "For stronger bones ",
+      "bestBefore": "2022-03-14T22:00:00.000Z",
+      "id": 6
+    },
+    {
+      "name": "Basilik",
+      "ingredientType": "Herb",
+      "quantity": 200,
+      "unit": "g",
+      "freshness": "Use NOW",
+      "comment": "Good for pasta",
+      "bestBefore": "2022-03-10T22:00:00.000Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
